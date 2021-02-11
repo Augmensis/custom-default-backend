@@ -43,7 +43,8 @@ spec:
     spec:
       containers:
       - name: nginx-custom-default-backend
-        image: <your-registry>/custom-default-backend:1.0
+        #image: <your-registry>/custom-default-backend:1.0 ## replaced original placeholder with generic public repo
+        image: augmensis/nginx-default-service-backend:latest
         ports:
         - containerPort: 80
         # Setting the environment variable DEBUG we can see the headers sent 
